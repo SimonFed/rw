@@ -1,0 +1,13 @@
+<%- include('particles/header.ejs') %>
+
+<%- include('particles/navigation.ejs') %>
+
+<form action="/upload" method="post" enctype="multipart/form-data">
+<label class="form-group__label" for="title">Имя фотки</label>
+<input class="form-group__input" type="text" id="title" name="title" placeholder="Имя фотки">
+
+Выберите фотку<input type="file"name="uploadFile" id="">
+<br><br>
+<button type="submit">Загрузить</button>
+</form>
+<%- include('particles/footer.ejs') %>

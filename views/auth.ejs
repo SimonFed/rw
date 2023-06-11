@@ -1,0 +1,25 @@
+<%- include('particles/header.ejs') %>
+
+<%- include('particles/navigation.ejs') %>
+
+
+
+<div class="section">
+    <h2>Войти</h2>
+    <form action="/auth" method="post">
+            <input  name='name'type="text" placeholder='Имя'>
+            <input  name='password' type="password" placeholder='Пароль'>
+            <input class="form-button" type="submit" value="Войти">
+    </form>
+</div>
+<div class="section">
+    <h2>Авторизоваться</h2>
+        <form action="/open" method="post">
+        <input  name='name'type="text" placeholder='Имя'>
+        <input  name='password' type="password" placeholder='Пароль'>
+        <input class="form-button" type="submit" value="Авторизоваться">
+</form>
+</div>
+
+
+<%- include('particles/footer.ejs') %>
